@@ -1,18 +1,25 @@
 {
-    "compilerOptions": {
-        "strict": true,
-        "outDir": "bin",
-        "target": "es2016",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "experimentalDecorators": true,
-        "pretty": true,
-        "noFallthroughCasesInSwitch": true,
-        "noImplicitReturns": true,
-        "forceConsistentCasingInFileNames": true
-    },
-    "files": [
-        "index.ts"
-    ]
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "lib": [
+      "es2017",
+      "es2019",
+      "es2020",
+      "DOM"
+    ],
+    "declaration": false,
+    "rootDir": "./",
+    "outDir": ".bin",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "index.ts",
+    "resources/**/*.ts"
+  ]
 }
